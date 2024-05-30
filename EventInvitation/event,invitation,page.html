@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="event.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('pink back.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        /*.container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(174, 45, 45, 0.9);*/
+        .header {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            background: url('wedding background 1.jpg') no-repeat center center;
+            padding: 1px;
+            background-size: cover;
+            color: #fc9eac;
+            text-overflow: initial;
+            text-shadow: gray;
+            border-radius: 25px;
+            position: relative;
+            box-shadow: 25px rgba(0, 0, 0, 0.1);
+            height: 300px; /* Set a fixed height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .header:hover{
+            transform: scale(1.07);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-out;
+
+        }
+        .header h1 {
+            font-size: 48px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-bottom: 10px;
+            color: #f6a9b5;
+            text-overflow: initial;
+            text-shadow: gray;
+        }
+        .header p {
+            font-size: 20px;
+           
+            color: #f6a9b5;
+            text-overflow: initial;
+            text-shadow: gray;
+            
+        }
+
+        .details{
+            padding: 1px;
+            background-size: cover;
+            text-decoration: solid;
+            background: url('back3.png') no-repeat center center;
+            padding: 1px;
+            background-size: cover;
+            color: #f4788b;
+            text-overflow: initial;
+            text-shadow: gray;
+            border-radius: 25px;
+            position: relative;
+            box-shadow: 25px rgba(0, 0, 0, 0.1);
+            height: 300px; /* Set a fixed height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .details:hover{
+            transform: scale(1.07);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-out; 
+        }
+
+        .rsvp{
+            padding: 1px;
+            background-size: cover;
+            text-decoration: solid;
+            border-radius: 25px;
+            background: url('back4.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .rsvp:hover{
+            transform: scale(1.07);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-out;
+        }
+        .details, .rsvp, .gallery {
+            background-color: #ffffff;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+         .rsvp h2, .gallery h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #fecaff;
+        }
+        .details p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .rsvp form {
+            display: flex;
+            flex-direction: column;
+        }
+        .rsvp input, .rsvp textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+        .rsvp button {
+            padding: 10px;
+            font-size: 18px;
+            color: #ffffff;
+           
+            background-color: #f0c0f3;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .rsvp button:hover {
+           
+            background-color: #f759ec;
+            
+        }
+        .gallery:hover{
+            transform: scale(1.07);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-out;
+        }
+        .gallery {
+            text-align: center;
+            padding: 1px;
+            background-size: cover;
+            text-decoration: solid;
+            border-radius: 25px;
+            background: url('back6.png') no-repeat center center;
+            background-size: cover;
+        }
+        .image-container {
+            display: inline-block;
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        @media (min-width: 600px) {
+    .photos img {
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+            main.grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            main.grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Name & Name's Wedding</h1>
+            <p>You're Invited to Celebrate Our Special Day</p>
+        </div>
+
+        <div class="details">
+            <h2>Event Details</h2>
+            <p>Date: June 15, 2024</p>
+            <p>Time: 4:00 PM</p>
+            <p>Venue: Conventions, Address</p>
+            <p>Join us for an evening of celebration, love, and joy as we exchange our vows and celebrate our union. We look forward to sharing this special moment with you.</p>
+        </div>
+
+        <div class="rsvp">
+            <h2>RSVP</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="image-container">
+                <img src="back6.jpg" alt="Photo 1">
+            </div>
+            <div class="image-container">
+                <img src="back6.jpg" alt="Photo 2">
+            </div>
+            <div class="image-container">
+                <img src="back6.jpg" alt="Photo 3">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
